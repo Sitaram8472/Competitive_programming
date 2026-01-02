@@ -1,0 +1,1 @@
+{"name":"Local: Q1","url":"d:\\CodeForces\\ICPC\\ICPC 25\\Q1.java","tests":[{"id":1762526636599,"input":"3\n3\nabc 0\nabc 1\nefg 1\n7\nfck 1\nfck 0\nfck 1\nbody 0\nbody 0\nbody 0\nram 0\n5\nw 1\nw 0\nw 0\nw 1\nw 1","output":"2\n6\n3"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\CodeForces\\ICPC\\ICPC 25\\Q1.java","group":"local","local":true}

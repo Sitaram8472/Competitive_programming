@@ -1,0 +1,1 @@
+{"name":"Local: TheBrickwall","url":"d:\\Contests\\CodeVita\\TheBrickwall.java","tests":[{"id":1760159818933,"input":"3R1D\n\n1R1R1R1G\n\n2G1G1G\n\n2S2R","output":"4"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\Contests\\CodeVita\\TheBrickwall.java","group":"local","local":true}

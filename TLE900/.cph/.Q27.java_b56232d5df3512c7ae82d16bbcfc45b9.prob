@@ -1,0 +1,1 @@
+{"name":"Local: Q27","url":"d:\\CodeForces\\TLE900\\Q27.java","tests":[{"id":1762269969431,"input":"2\n3 3\n3 6 9\n3 3\n6 4 11\n","output":"6 6\n7 8\n"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\CodeForces\\TLE900\\Q27.java","group":"local","local":true}

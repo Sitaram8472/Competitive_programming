@@ -1,0 +1,1 @@
+{"name":"Local: Q18","url":"d:\\Contests\\TLE800\\Q18.java","tests":[{"id":1755785079043,"input":"3\n10 2\n10 3\n3 4\n","output":"2\n7 3\n1\n10\n1\n3\n"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\Contests\\TLE800\\Q18.java","group":"local","local":true}

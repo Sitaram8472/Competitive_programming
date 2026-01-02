@@ -1,0 +1,1 @@
+{"name":"Local: BrickSolver","url":"d:\\Contests\\CodeVita\\BrickSolver.java","tests":[{"id":1760169524241,"input":"5\n3G1R1G\n1G1R1G2R\n1S1R1G1R1D\n2R1G1R1G\n5G","output":"7"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\Contests\\CodeVita\\BrickSolver.java","group":"local","local":true}

@@ -1,0 +1,1 @@
+{"name":"Local: Q4","url":"d:\\Contests\\TLE900\\Q4.java","tests":[{"id":1757700017755,"input":"2\n5 3 3\n1 1 7\n7 1 5\n1 2 5 6 8\n","output":"9\n21\n"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\Contests\\TLE900\\Q4.java","group":"local","local":true}

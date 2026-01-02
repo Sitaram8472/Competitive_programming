@@ -1,0 +1,1 @@
+{"name":"Local: Q3","url":"d:\\CodeForces\\ICPC\\ICPC 25\\Q3.java","tests":[{"id":1762530457286,"input":"3\n4 2\nabcd\nab\ncd\n4 2\nbaab\nab\nca\n4 2 \nacaa\nab\ncd","output":"1 1 2 2\n1 1 1 1\n1 2 1 1"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\CodeForces\\ICPC\\ICPC 25\\Q3.java","group":"local","local":true}
