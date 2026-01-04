@@ -16,7 +16,7 @@ public class Q2 {
       int min = Integer.MAX_VALUE;
 
       for (int i = 0; i < n; i++) {
-        int product = num[i] % k;
+        int product = (k - (num[i] % k)) % k;
         min = Math.min(min, product);
 
       }
