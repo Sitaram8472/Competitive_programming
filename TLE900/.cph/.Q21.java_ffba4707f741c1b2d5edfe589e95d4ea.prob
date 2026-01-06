@@ -1,0 +1,1 @@
+{"name":"Local: Q21","url":"d:\\CP\\TLE900\\Q21.java","tests":[{"id":1767716396500,"input":"5\n100\n71345\n3259\n50555\n2050047","output":"0\n3\n1\n3\n2"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\CP\\TLE900\\Q21.java","group":"local","local":true}
