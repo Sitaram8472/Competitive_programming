@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class Q22 {
+public class Q23 {
   public static void main(String[] args) {
     Scanner sc = new Scanner(System.in);
     int t = sc.nextInt();
@@ -11,18 +11,12 @@ public class Q22 {
         num[i] = sc.nextInt();
       }
 
-      int cnt1 = 0;
-      int cnt0 = 0;
-      for (int i = 0; i < n; i++) {
-        if (num[i] == 1) {
-          cnt1++;
-        } else if (num[i] == 0) {
-          cnt0++;
-        }
+      int total = num[0];
+      for (int i = 1; i < n; i++) {
+        total &= num[i];
       }
 
-      long way = (long) Math.pow(2, cnt0) * cnt1;
-      System.out.println(way);
+      System.out.println(total);
 
     }
     sc.close();
