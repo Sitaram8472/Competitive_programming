@@ -1,31 +1,51 @@
+
+/**
+ * author:  sitaram sahu
+**/
+
 import java.util.*;
 import java.io.*;
 
-public class Q9 {
+public class Q10 {
+  /**
+   * author: sitaram sahu
+   * created: 01.02.2026 21:15:31
+   **/
+
   static FastReader sc = new FastReader();
+  static PrintWriter out = new PrintWriter(System.out);
 
   public static void main(String[] args) {
     int testCases = sc.nextInt();
     while (testCases-- > 0) {
       solve();
     }
+    out.flush();
+    out.close();
   }
 
   private static void solve() {
     int n = sc.nextInt();
-    int a = 1;
-    int b = n - 1;
-    for (int i = 2; i * i <= n; i++) {
-      if (n % i == 0) {
-        a = n / i;
-        b = n - a;
-        break;
+    String ch = sc.next();
+    String s = sc.next();
+
+    n *= 2;
+    s += s;
+
+    int g = -1;
+    int max = 0;
+
+    for (int i = n - 1; i >= 0; i--) {
+      if (s.charAt(i) == 'g') {
+        g = i;
+      }
+      if (s.charAt(i) == ch.charAt(0)) {
+        int diff = g - i;
+        max = Math.max(max, diff);
       }
     }
-    System.out.println(a + " " + b);
 
-    // Logic goes here
-    // Example: System.out.println(result);
+    System.out.println(max);
   }
 
   static class FastReader {
@@ -72,5 +92,4 @@ public class Q9 {
       return str;
     }
   }
-
 }

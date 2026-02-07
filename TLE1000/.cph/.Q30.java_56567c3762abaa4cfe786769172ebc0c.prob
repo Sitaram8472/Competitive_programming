@@ -1,0 +1,1 @@
+{"name":"Local: Q30","url":"d:\\CP\\TLE1000\\Q30.java","tests":[{"id":1769794297582,"input":"3\n1\n7\n4\n1 1 3 5\n6\n3 2 1 5 6 4\n","output":"7\n1 5 1 3\n2 4 6 1 3 5\n"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\CP\\TLE1000\\Q30.java","group":"local","local":true}

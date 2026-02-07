@@ -1,0 +1,1 @@
+{"name":"Local: Q16","url":"d:\\CP\\TLE1000\\Q16.java","tests":[{"id":1768846056672,"input":"6\n3 2 1\n10 6 4\n11 6 5\n10 9 1\n10 8 2\n11 9 2","output":"RBR\nRRBRBRBRBR\nRBRBRBRBRBR\nRRRRRBRRRR\nRRRBRRRBRR\nRRRBRRRBRRR"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\CP\\TLE1000\\Q16.java","group":"local","local":true}

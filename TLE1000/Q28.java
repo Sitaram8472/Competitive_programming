@@ -1,31 +1,57 @@
+
+/**
+ * author:  sitaram sahu
+**/
+
 import java.util.*;
 import java.io.*;
 
-public class Q9 {
+public class Q28 {
+  /**
+   * author: sitaram sahu
+   * created: 28.01.2026 21:22:21
+   **/
+
   static FastReader sc = new FastReader();
+  static PrintWriter out = new PrintWriter(System.out);
 
   public static void main(String[] args) {
     int testCases = sc.nextInt();
     while (testCases-- > 0) {
       solve();
     }
+    out.flush();
+    out.close();
   }
 
   private static void solve() {
     int n = sc.nextInt();
-    int a = 1;
-    int b = n - 1;
-    for (int i = 2; i * i <= n; i++) {
-      if (n % i == 0) {
-        a = n / i;
-        b = n - a;
-        break;
-      }
-    }
-    System.out.println(a + " " + b);
+    String s = sc.next();
 
-    // Logic goes here
-    // Example: System.out.println(result);
+    Stack<Character> stack = new Stack<>();
+    for (int i = 0; i < n; i++) {
+      if (s.charAt(i) == ')') {
+        if (!stack.isEmpty() && stack.peek() == '(') {
+          stack.pop();
+        } else {
+          stack.push(s.charAt(i));
+        }
+      } else {
+        if (s.charAt(i) == '(') {
+          stack.push(s.charAt(i));
+        } else {
+          if (!stack.isEmpty() && stack.peek() == '(') {
+            stack.pop();
+          } else {
+            stack.push(s.charAt(i));
+          }
+        }
+      }
+
+    }
+
+    System.out.println(stack.size() / 2);
+
   }
 
   static class FastReader {
@@ -72,5 +98,4 @@ public class Q9 {
       return str;
     }
   }
-
 }

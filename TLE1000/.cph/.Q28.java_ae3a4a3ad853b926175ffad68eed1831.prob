@@ -1,0 +1,1 @@
+{"name":"Local: Q28","url":"d:\\CP\\TLE1000\\Q28.java","tests":[{"id":1769615546648,"input":"4\n2\n)(\n4\n()()\n8\n())()()(\n10\n)))((((())","output":"1\n0\n1\n3"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\CP\\TLE1000\\Q28.java","group":"local","local":true}

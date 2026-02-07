@@ -1,0 +1,1 @@
+{"name":"Local: Q8","url":"d:\\CP\\TLE1000\\Q8.java","tests":[{"id":1769959065154,"input":"5\n2\naa\n7\nabcabcd\n5\naaaaa\n10\npaiumoment\n4\naazz\n","output":"2\n7\n2\n10\n3\n"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\CP\\TLE1000\\Q8.java","group":"local","local":true}

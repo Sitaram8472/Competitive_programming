@@ -1,7 +1,18 @@
+
+/**
+ * author:  sitaram sahu
+**/
+
 import java.util.*;
 import java.io.*;
+import java.lang.reflect.Array;
 
-public class Q9 {
+public class Q14 {
+  /**
+   * author: sitaram sahu
+   * created: 16.01.2026 20:05:19
+   **/
+
   static FastReader sc = new FastReader();
 
   public static void main(String[] args) {
@@ -13,19 +24,50 @@ public class Q9 {
 
   private static void solve() {
     int n = sc.nextInt();
-    int a = 1;
-    int b = n - 1;
-    for (int i = 2; i * i <= n; i++) {
-      if (n % i == 0) {
-        a = n / i;
-        b = n - a;
+    int[] nums = new int[n];
+    for (int i = 0; i < n; i++) {
+      nums[i] = sc.nextInt();
+    }
+
+    HashMap<Integer, Integer> map = new HashMap<>();
+    for (int i = 0; i < n; i++) {
+      map.put(nums[i], map.getOrDefault(nums[i], 0) + 1);
+    }
+
+    boolean found = true;
+
+    for (int x : map.values()) {
+      if (x == 1) {
+        found = false;
         break;
       }
     }
-    System.out.println(a + " " + b);
+    if (!found) {
+      System.out.println(-1);
+      return;
+    }
 
-    // Logic goes here
-    // Example: System.out.println(result);
+    ArrayList<Integer> list = new ArrayList<>();
+    for (int i = 1; i <= n; i++) {
+      list.add(i);
+    }
+
+    int l = 0;
+
+    for (int r = 0; r < n; r++) {
+      if (nums[r] != nums[l]) {
+        Collections.rotate(list.subList(l, r), -1);
+        l = r;
+      }
+    }
+
+    Collections.rotate(list.subList(l, n), -1);
+
+    for (int x : list) {
+      System.out.print(x + " ");
+    }
+    System.out.println();
+
   }
 
   static class FastReader {
@@ -72,5 +114,4 @@ public class Q9 {
       return str;
     }
   }
-
 }

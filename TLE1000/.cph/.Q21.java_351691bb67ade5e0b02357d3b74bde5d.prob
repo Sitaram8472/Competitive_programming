@@ -1,0 +1,1 @@
+{"name":"Local: Q21","url":"d:\\CP\\TLE1000\\Q21.java","tests":[{"id":1769003699902,"input":"5\na\na\nabcd\nbc\nhello\ncodeforces\nhello\nhelo\ndhjakjsnasjhfksafasd\nadjsnasjhfksvdafdser","output":"0\n2\n13\n3\n20"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\CP\\TLE1000\\Q21.java","group":"local","local":true}

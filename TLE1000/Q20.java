@@ -1,7 +1,17 @@
+
+/**
+ * author:  sitaram sahu
+**/
+
 import java.util.*;
 import java.io.*;
 
-public class Q9 {
+public class Q20 {
+  /**
+   * author: sitaram sahu
+   * created: 20.01.2026 22:38:35
+   **/
+
   static FastReader sc = new FastReader();
 
   public static void main(String[] args) {
@@ -12,20 +22,30 @@ public class Q9 {
   }
 
   private static void solve() {
-    int n = sc.nextInt();
-    int a = 1;
-    int b = n - 1;
-    for (int i = 2; i * i <= n; i++) {
-      if (n % i == 0) {
-        a = n / i;
-        b = n - a;
-        break;
-      }
-    }
-    System.out.println(a + " " + b);
+    int a = sc.nextInt();
+    int b = sc.nextInt();
 
-    // Logic goes here
-    // Example: System.out.println(result);
+    int arrXor;
+    int c = (a - 1) % 4;
+
+    if (c == 0) {
+      arrXor = a - 1;
+    } else if (c == 1) {
+      arrXor = 1;
+    } else if (c == 2) {
+      arrXor = a;
+    } else {
+      arrXor = 0;
+    }
+
+    if (arrXor == b) {
+      System.out.println(a);
+    } else if ((arrXor ^ b) != a) {
+      System.out.println(a + 1);
+    } else {
+      System.out.println(a + 2);
+    }
+
   }
 
   static class FastReader {
@@ -72,5 +92,4 @@ public class Q9 {
       return str;
     }
   }
-
 }
