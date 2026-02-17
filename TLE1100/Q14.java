@@ -6,10 +6,10 @@
 import java.util.*;
 import java.io.*;
 
-public class Q11 {
+public class Q14 {
   /**
    * author: sitaram sahu
-   * created: 13.02.2026 18:19:53
+   * created: 17.02.2026 21:23:34
    **/
 
   static FastReader sc = new FastReader();
@@ -26,35 +26,22 @@ public class Q11 {
 
   private static void solve() {
     int n = sc.nextInt();
-    int k = sc.nextInt();
-
-    int[] nums = new int[n];
+    int[] a = new int[n];
     for (int i = 0; i < n; i++) {
-      nums[i] = sc.nextInt();
+      a[i] = sc.nextInt();
     }
 
-    Arrays.sort(nums);
-
-    int i = 0;
-    int j = n - 1;
-
-    long sum = 0;
-    while (k > 0 && i <= j) {
-      long min = nums[i] + nums[i + 1];
-      long max = nums[j];
-      if (max > min) {
-        i += 2;
-      } else {
-        j--;
-      }
-      k--;
+    Integer[] b = new Integer[n];
+    for (int i = 0; i < n; i++) {
+      b[i] = sc.nextInt();
     }
 
-    while (i <= j) {
-      sum += nums[i];
-      i++;
+    int l = 0;
+    int r = -1;
+    for (int i = 0; i < n; i++) {
+      int j = i;
+
     }
-    System.out.println(sum);
 
   }
 

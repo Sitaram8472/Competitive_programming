@@ -6,10 +6,11 @@
 import java.util.*;
 import java.io.*;
 
-public class Q11 {
+public class A_Sum_of_Odd_Integers {
+
   /**
    * author: sitaram sahu
-   * created: 13.02.2026 18:19:53
+   * created: 17.02.2026 21:52:53
    **/
 
   static FastReader sc = new FastReader();
@@ -25,36 +26,16 @@ public class Q11 {
   }
 
   private static void solve() {
-    int n = sc.nextInt();
-    int k = sc.nextInt();
+    long n = sc.nextInt();
+    long k = sc.nextInt();
 
-    int[] nums = new int[n];
-    for (int i = 0; i < n; i++) {
-      nums[i] = sc.nextInt();
+    long minsum = k * k;
+
+    if (n >= minsum && n % 2 == k % 2) {  
+      System.out.println("YES");
+    } else {
+      System.out.println("NO");
     }
-
-    Arrays.sort(nums);
-
-    int i = 0;
-    int j = n - 1;
-
-    long sum = 0;
-    while (k > 0 && i <= j) {
-      long min = nums[i] + nums[i + 1];
-      long max = nums[j];
-      if (max > min) {
-        i += 2;
-      } else {
-        j--;
-      }
-      k--;
-    }
-
-    while (i <= j) {
-      sum += nums[i];
-      i++;
-    }
-    System.out.println(sum);
 
   }
 
